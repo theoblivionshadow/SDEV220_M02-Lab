@@ -18,11 +18,10 @@ while lastName != quit:
     
     #selection statement to determine student status
     if gpa >= 3.5:
-        print(f"{firstName} {lastName} has made the Dean's List.")
+        print(f"{firstName} {lastName} has made the Dean's List with a GPA of {gpa}.")
     elif gpa >= 3.25:
-        print(f"{firstName} {lastName} has made the Honor Roll.")
+        print(f"{firstName} {lastName} has made the Honor Roll with a GPA of {gpa}.")
     else:
-        print(f"{firstName} {lastName}, keep studying! You can do it.")
-    
+        print(f"{firstName} {lastName} didn't make the Honor Roll or Dean's List with a GPA of {gpa}. Keep studying!")
     #get last name from user to continue or exit loop
     lastName = input("Please enter student's last name: ")
